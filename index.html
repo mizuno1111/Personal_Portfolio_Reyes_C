@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Carl Matthew Reyes, BSU College of Industrial Technology student seeking OJT placement.">
+  <meta name="theme-color" content="#000000">
+  <title>Carl Matthew Reyes | OJT Portfolio</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <!-- Initials button: always takes you to the Home scene -->
+      <a href="#home" class="brand" data-scene="home" aria-label="Go to Home">CMR</a> <!-- EDIT: your initials -->
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul>
+          <li><a class="nav-link" href="#about" data-scene="about">About</a></li>
+          <li><a class="nav-link" href="#skills" data-scene="skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects" data-scene="projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact" data-scene="contact">Contact</a></li>
+          <li class="nav-hire"><a class="btn btn-light btn-small" href="mailto:carlmatthewreyes6@gmail.com?subject=OJT%20Inquiry%20-%20[Carl%20Matthew%20Reyes]">Hire Me!</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= A. HOME (HERO) ================= -->
+    <section class="scene hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="welcome pop">Welcome! I'm</p>
+          <h1 id="hero-title" class="pop">Carl Matthew Reyes</h1>
+          <p class="role pop">Junior Back-End Web Developer Intern <!-- EDIT: your target role --></p>
+          <p class="hero-blurb pop">
+            BSU College of Industrial Technology student building responsive websites and embedded-systems
+            prototypes. Open to an OJT placement where I can contribute clean, well-documented work.
+            <!-- EDIT: write 1-2 sentences in your own words -->
+          </p>
+
+          <ul class="metrics" aria-label="Internship metrics">
+            <li class="pop">
+              <span class="metric-label">Target Training Hours</span>
+              <span class="metric-value">600 Hours <!-- EDIT: your required hours --></span>
+            </li>
+            <li class="pop">
+              <span class="metric-label">Availability Window</span>
+              <span class="metric-value">Starting 2nd Semester A.Y. 2026–2027 <!-- EDIT --></span>
+            </li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn btn-primary pop" href="assets/Reyes_CV.pdf" download>Download CV / Resume</a>
+            <a class="btn btn-outline pop" href="#contact" data-scene="contact">Contact / Inquire</a>
+          </div>
+
+          <ul class="channels pop" aria-label="Direct channels">
+            <li><a href="https://github.com/mizuno1111" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/carl-matthew-reyes-3824b0449" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="mailto:carlmatthewreyes6@gmail.com">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual pop">
+          <svg class="blob" viewBox="0 0 560 560" aria-hidden="true" preserveAspectRatio="none">
+            <path d="M560 30 L340 30 C160 90 8 190 8 330 C8 470 130 545 290 545 C420 545 520 485 560 400 Z"/>
+          </svg>
+          <img class="hero-photo" src="assets/img/profile.jpg" alt="Professional portrait of Carl Matthew Reyes in smart-casual attire" width="400" height="400">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= B. ABOUT ================= -->
+    <section class="scene section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="about-title">About Me</h2>
+          <p>Who I am, where I study, and what I bring to a team.</p>
+        </header>
+        <div class="about-grid">
+          <div class="card">
+            <h3>Professional Summary</h3>
+            <p>
+              I am a Computer Technology student at Bulacan State University with hands-on
+              experience in embedded systems, ESP32 development, hardware integration, and
+              web development. Skilled in troubleshooting, Arduino programming, UI/UX design, and IoT prototyping, with a strong interest in developing practical technology solutions.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Academic Background</h3>
+            <dl class="details">
+              <dt>Degree Program</dt>
+              <dd>Bachelor of Industrial Technology <!-- EDIT: exact program --></dd>
+              <dt>Major</dt>
+              <dd>Computer Technology <!-- EDIT --></dd>
+              <dt>Institution</dt>
+              <dd>Bulacan State University – College of Industrial Technology</dd>
+              <dt>Expected Graduation</dt>
+              <dd>2027<!-- EDIT --></dd>
+            </dl>
+          </div>
+
+          <div class="card">
+            <h3>Core Competencies</h3>
+            <ul class="check-list">
+              <li>Rapid AI-assisted prototyping</li>
+              <li>Responsive layout debugging</li>
+              <li>Technical documentation</li>
+              <li>Version control basics (Git/GitHub)</li>
+              <li>Embedded systems prototyping (ESP32, Arduino)</li>
+              <li>Sensor interfacing and calibration (RS485, MAX485)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= C. SKILLS ================= -->
+    <section class="scene section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <h2 id="skills-title">Technical Skills</h2>
+          <p>The tools and technologies I use to design, build and document my work.</p>
+        </header>
+        <div class="skills-grid">
+
+          <article class="card skill-card">
+            <div class="skill-top">
+              <span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+              <h3>Back-End &amp; Core Web</h3>
+            </div>
+            <ul class="tags">
+              <li>Java</li><li>Python</li><li>C++</li><li>HTML5</li><li>Responsive Design</li><li>Basic JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-top">
+              <span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5.5" r="2.5"/><circle cx="6" cy="18.5" r="2.5"/><circle cx="18" cy="9" r="2.5"/><path d="M6 8v8M18 11.5c0 4-6 3-12 5"/></svg></span>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <ul class="tags">
+              <li>Git / GitHub</li><li>VS Code</li><li>Claude</li><li>ChatGPT</li><li>Cursor</li><li>GitHub Copilot</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-top">
+              <span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></svg></span>
+              <h3>Design &amp; Digital Media</h3>
+            </div>
+            <ul class="tags">
+              <li>Figma Prototyping</li><li>UI Design Systems</li><li>Asset Optimization</li><li>Vector Icons</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <div class="skill-top">
+              <span class="icon-circle"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></span>
+              <h3>Industrial &amp; Technical Foundations</h3>
+            </div>
+            <ul class="tags">
+              <li>Microcontroller Programming (ESP32)</li><li>Sensor Interfacing (RS485)</li><li>Arduino IDE</li><li>Hardware Servicing</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= D. PROJECTS ================= -->
+    <section class="scene section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head section-head-left">
+          <p class="eyebrow">My Portfolio</p>
+          <h2 id="projects-title">Featured Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- ===== PROJECT 1 =====
+               To add more images: copy one <img> line inside .carousel-track and change the file name.
+               Controls (arrows, dots, counter) appear automatically when there is more than one image. -->
+          <article class="card project-card">
+            <div class="carousel" aria-label="ESP32-S3 Soil NPK Scanner images">
+              <div class="carousel-track">
+                <img src="assets/img/projects/project-1/1.jpg" alt="ESP32-S3 soil NPK scanner LCD interface" loading="lazy" width="800" height="500">
+                <img src="assets/img/projects/project-1/2.jpg" alt="Scanner hardware wiring and enclosure" loading="lazy" width="800" height="500">
+                <img src="assets/img/projects/project-1/3.jpg" alt="Scanner taking a soil reading" loading="lazy" width="800" height="500">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>ESP32-S3 Soil NPK Scanner</h3>
+              <p class="project-role">Role: Hardware &amp; Firmware Developer <!-- EDIT: your exact role --></p>
+              <p class="project-summary">
+                A handheld prototype that measures soil nitrogen, phosphorus, and potassium (NPK) levels with an
+                ESP32-S3, an RS485 NPK sensor and an I2C LCD Display, and sends readings to a web platform.
+              </p>
+              <ul class="tags tags-small" aria-label="Tech stack">
+                <li>ESP32-S3</li> <li> Arduino C++</li> <li> RS485 / MAX485</li> <li> I2C LCD Display</li> <li> Wi-Fi</li>
+              </ul>
+              <div class="project-links">
+                <button type="button" class="btn btn-small btn-primary" data-details>More details</button>
+              </div>
+            </div>
+
+            <!-- Content shown in the "More details" popup. EDIT everything here so it matches what you really built. -->
+            <div class="project-details" hidden>
+              <h4>Overview</h4>
+              <p>
+                Developed the hardware and firmware components of an ESP32-S3-based soil-scanning device. 
+                The system integrates a 7-in-1 RS485 soil sensor through a MAX485 transceiver module and
+                features an I2C LCD Display for user interaction. It collects soil parameter
+                readings and transmits the acquired data through Wi-Fi to the SoilSense web platform for
+                analysis and crop recommendations.
+              </p>
+              <h4>Key features</h4>
+              <ul>
+                <li>RS485 communication with a 7-in-1 soil NPK sensor</li>
+                <li>I2C LCD Display for real-time readings and user interface</li>
+                <li>ESP32-S3-based firmware for sensor acquisition and device control.</li>
+                <li>Battery-powered hardware design with voltage regulation for different components.</li>
+                <li>MAX485 transceiver for RS485-to-UART communication.</li>
+                <li>Wi-Fi upload of readings to the web platform</li>
+              </ul>
+              <h4>My responsibilities</h4>
+              <ul>
+                <li>Designed and assembled hardware connections integrating the ESP32-S3,
+                    RS485 soil sensor, MAX485 module, I2C LCD Display, and supporting
+                     electronic components.</li>
+                <li>Conducted hardware testing and troubleshooting involving sensor
+                    communication, GPIO assignments, power distribution, and LCD operation.</li>
+                <li>Developed firmware in Arduino C++ to manage sensor data acquisition,
+                    LCD display updates, and Wi-Fi data transmission to the web platform.</li>
+              </ul>
+              <h4>What I learned</h4>
+              <p>Developing the hardware strengthened my understanding of embedded systems, microcontroller interfacing, serial communication protocols, and power management. One of the major challenges was troubleshooting communication and power-related issues between the ESP32-S3, RS485 sensor, and display. Through systematic testing, firmware adjustments, and hardware debugging, I gained practical experience in integrating multiple electronic components into a functional IoT-based soil monitoring device.</p>
+            </div>
+          </article>
+
+          <!-- ===== PROJECT 2 ===== -->
+          <article class="card project-card">
+            <div class="carousel" aria-label="Soil Analysis Web Platform images">
+              <div class="carousel-track">
+                <img src="assets/img/projects/project-2/1.jpg" alt="Soil analysis website dashboard" loading="lazy" width="800" height="500">
+                <img src="assets/img/projects/project-2/2.jpg" alt="Login and registration page" loading="lazy" width="800" height="500">
+                <img src="assets/img/projects/project-2/3.jpg" alt="Crop recommendation results page" loading="lazy" width="800" height="500">
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Soil Analysis Web Platform</h3>
+              <p class="project-role">Role: Assistant Web Developer <!-- EDIT: your exact role --></p>
+              <p class="project-summary">
+                A web application that stores and displays soil scan data and gives crop recommendations, with student
+                and admin accounts and device pairing through a code.
+              </p>
+              <ul class="tags tags-small" aria-label="Tech stack">
+                <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>User Accounts</li><li>REST API</li>
+                <!-- EDIT: list the exact stack you used -->
+              </ul>
+              <div class="project-links">
+                <button type="button" class="btn btn-small btn-primary" data-details>More details</button>
+              </div>
+            </div>
+
+            <div class="project-details" hidden>
+              <h4>Overview</h4>
+              <p>
+                The platform receives readings from the scanner and shows them to the signed-in user. Students and
+                admins each have their own accounts, and every account only sees its own scan data.
+              </p>
+              <h4>Key features</h4>
+              <ul>
+                <li>Registration and login for student and admin accounts</li>
+                <li>Device pairing: Connect on the scanner to link it to your account</li>
+                <li>Crop recommendations based on the scanned NPK values</li>
+              </ul>
+              <h4>My responsibilities</h4>
+              <ul>
+                <li>Contributed to UI polishing, including layout adjustments, styling improvements, and interface consistency.</li>
+                <li>Participated in testing and reviewing website functionality to identify interface issues and inconsistencies.</li>
+                <li>Helped verify the deployed website and its accessibility after deployment.</li>
+              </ul>
+              <h4>What I learned</h4>
+              <p>Through this project, I gained practical experience in collaborative web development,
+                 interface refinement, and web deployment using Vercel. I also learned the importance of testing,
+                 maintaining consistent user interfaces, and ensuring that a web application remains accessible 
+                 and functional after deployment.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= E. CONTACT ================= -->
+    <section class="scene section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <span class="plane-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 3L3 10.5l6.5 2.5L12 20z"/><path d="M21 3L9.5 13"/></svg></span>
+          <h2 id="contact-title">Interested in bringing me onto your team for OJT? Let's connect.</h2>
+          <p class="contact-intro">
+            I'm open to inquiries from industry partners and HR teams. Send me an email and I'll respond promptly.
+          </p>
+          <a class="btn btn-primary btn-large" href="mailto:carlmatthewreyes6@gmail.com?subject=OJT%20Inquiry%20-%20[Carl%20Matthew%20Reyes]">Email Me Directly</a>
+
+          <ul class="contact-list">
+            <li><strong>Email</strong> <a href="mailto:carlmatthewreyes6@gmail.com">carlmatthewreyes6@gmail.com</a></li>
+            <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/carl-matthew-reyes-3824b0449/" target="_blank" rel="noopener noreferrer">linkedin.com/in/carl-matthew-reyes-3824b0449/</a></li>
+            <li><strong>GitHub</strong> <a href="https://github.com/mizuno1111" target="_blank" rel="noopener noreferrer">github.com/mizuno1111</a></li>
+            <li><strong>Preferred Deployment</strong> <span>Malolos / Bulacan / Metro Manila / Remote <!-- EDIT --></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= F. FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-about">
+        <a href="#home" class="brand" data-scene="home" aria-label="Go to Home">CMR</a> <!-- EDIT: your initials -->
+        <p>BSU College of Industrial Technology student seeking an OJT placement in web development and technical support.</p>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-title">If you have any queries, please feel free to contact me</p>
+        <div class="footer-cols">
+          <div>
+            <h5>Send Mail</h5>
+            <a href="mailto:carlmatthewreyes6@gmail.com">carlmatthewreyes6@gmail.com</a>
+          </div>
+          <div>
+            <h5>Make Call</h5>
+            <a href="tel:+639617119992">+63 961 711 9992</a> <!-- EDIT -->
+          </div>
+          <div>
+            <h5>Get In Touch</h5>
+            <span>Santa Maria, Bulacan, Philippines</span> <!-- EDIT -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <div class="container footer-bar-wrap">
+        <p>&copy; 2026 Carl Matthew Reyes. All rights reserved. · College of Industrial Technology, Bulacan State University</p>
+        <ul class="footer-social">
+          <li><a href="https://github.com/mizuno1111" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/carl-matthew-reyes-3824b0449/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#" class="back-to-top">↑ Back to Top</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PROJECT DETAILS POPUP ================= -->
+  <dialog id="project-modal" aria-labelledby="modal-title">
+    <button type="button" class="modal-close" aria-label="Close details">&times;</button>
+    <div class="modal-content"></div>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
