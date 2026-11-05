@@ -270,3 +270,33 @@
   var start = location.hash.replace('#', '');
   showScene(isScene(start) ? start : 'home', false);
 })();
+
+
+/* =====================================================
+   5. LIGHT / DARK THEME TOGGLE (remembers the choice)
+   ===================================================== */
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var btn = document.getElementById('theme-toggle');
+  var meta = document.querySelector('meta[name="theme-color"]');
+  if (!btn) return;
+
+  function apply(theme) {
+    var light = theme === 'light';
+    if (light) root.setAttribute('data-theme', 'light');
+    else root.removeAttribute('data-theme');
+    var label = light ? 'Switch to dark mode' : 'Switch to light mode';
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', label);
+    if (meta) meta.setAttribute('content', light ? '#f5f7fb' : '#000000');
+  }
+
+  apply(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+
+  btn.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    apply(next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();
